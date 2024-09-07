@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fixed Box with Centering and Scrolling</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* 设置容器的样式，使其在视口中居中 */
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* 使容器的高度占满整个视口 */
+        padding: 20px; /* 给容器加点内边距 */
+        box-sizing: border-box; /* 确保内边距不会影响容器的总高度 */
+      }
+      .box {
+        width: 300px; /* 设定固定宽度 */
+        height: 200px; /* 设定固定高度 */
+        border: 1px solid #000; /* 边框样式 */
+        overflow: auto; /* 超出部分显示滚动条 */
+        display: flex;
+        flex-direction: row;
+        justify-content: center; /* 内容垂直居中 */
+        align-self: center;
+        padding: 10px; /* 盒子内部的内边距 */
+        box-sizing: border-box; /* 确保内边距和边框不会影响盒子的宽高 */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <p>这里是。</p>
+        <p>这里是。</p>
+        <p>这里是。</p>
+        <p>这里是。</p>
+      </div>
+    </div>
+  </body>
+</html>
